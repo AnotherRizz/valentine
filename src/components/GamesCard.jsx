@@ -4,31 +4,32 @@ import { Link } from "react-router-dom";
 
 const questions = [
   {
-    q: "Tanggal berapa kita pertama kali bertemu?",
-    options: ["1 Januari", "14 Februari", "10 Maret", "5 Mei"],
-    answer: 1,
+    q: "Bulan berapa kita pertama kali ketemu?",
+    options: ["Oktober", "September", "Agustus", "November", "Juni"],
+    answer: 1, // September
   },
   {
-    q: "Makanan favorit kita waktu bareng?",
-    options: ["Bakso", "Pizza", "Ayam Geprek", "Sate"],
-    answer: 2,
+    q: "Dimana tempat pertama kali kita ketemu?",
+    options: ["Salon", "Fish It", "Fish", "Gunung"],
+    answer: 1, // Fish It
   },
   {
-    q: "Siapa yang paling sering ngambek?",
-    options: ["Aku", "Kamu", "Dua-duanya", "Tidak pernah"],
-    answer: 2,
+    q: "Apa makanan favorit aku?",
+    options: ["Dimsum", "Kebab", "Seblak", "Promina", "Sushi"],
+    answer: 3, // Promina
   },
   {
-    q: "Tempat favorit kita?",
-    options: ["Pantai", "Mall", "Kafe", "Rumah"],
-    answer: 0,
+    q: "Minuman favorit aku?",
+    options: ["Susu", "Matcha", "Kopi", "Boba", "Air Putih"],
+    answer: 1, // Matcha
   },
   {
-    q: "Siapa yang paling sayang?",
-    options: ["Aku", "Kamu", "Kita berdua", "Rahasia"],
-    answer: 2,
+    q: "Siapa yang sering ngambek?",
+    options: ["Aku", "Kaka", "Dua-duanya sama", "Ga ada"],
+    answer: 2, // Dua-duanya
   },
 ];
+
 
 const flowers = Array.from({ length: 40 });
 
@@ -95,7 +96,7 @@ const GamesCard = () => {
                 <button
                   key={i}
                   onClick={() => setSelected(i)}
-                  className={`w-full p-3 rounded-xl border transition 
+                  className={`w-full p-3 rounded-xl border transition cursor-pointer
                   ${
                     selected === i
                       ? "bg-pink-500 text-white"
@@ -110,9 +111,9 @@ const GamesCard = () => {
             <button
               disabled={selected === null}
               onClick={handleNext}
-              className="mt-6 px-6 py-2 bg-pink-600 text-white rounded-xl disabled:opacity-40"
+              className="mt-6 px-6 py-2 cursor-pointer bg-pink-600 text-white rounded-xl disabled:opacity-40"
             >
-              Next
+              Next Question
             </button>
           </>
         ) : (
@@ -145,7 +146,7 @@ const GamesCard = () => {
           animate="show"
           className=" w-full ">
           <div className="mt-5 flex justify-center gap-5">
-            <Link to="/valentine">
+            <Link to="/gallery">
               <span className="text-pink-200 rounded-xl px-4 py-2 bg-pink-700 hover:underline cursor-pointer">
                 Back
               </span>

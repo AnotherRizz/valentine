@@ -89,7 +89,7 @@ const CardLetters = () => {
             <p className="mt-6">
               Dengan hangat,
               <br />
-              <span className="font-semibold text-pink-700">Arsela 🌸</span>
+              <span className="font-semibold text-pink-700">Lea 🌸</span>
             </p>
           </div>
 
@@ -110,7 +110,7 @@ const CardLetters = () => {
           </Link>{" "}
           <Link to="/">
             <span className="text-pink-200 rounded-xl px-4 py-2 bg-pink-700 hover:underline cursor-pointer">
-              Next
+              End
             </span>
           </Link>{" "}
         </div>

@@ -112,7 +112,7 @@ const GrettingCard = () => {
             we create all have a special place in my heart. <br />
             <div className="mt-5">
 
-            <Link to="/">
+            <Link to="/welcome">
               <span className="text-pink-200 rounded-xl px-4 py-2 bg-pink-700 hover:underline cursor-pointer">
                 Back
               </span>
